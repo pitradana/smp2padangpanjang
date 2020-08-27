@@ -1,0 +1,20 @@
+body {
+  font-family: "Monstserrat",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#topbar {
+  background-color: #15477A;
+  color: #fff;
+}
+
+.top-contact, .sosmed {
+  list-style: none;
+}
+
+#topbar li {
+  display: inline-block;
+}
+
+#topbar li a {
+  color: #fff;
+}
