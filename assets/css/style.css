@@ -85,6 +85,12 @@ header {
   color: #F2C808;
   text-transform: uppercase;
   font-weight: 600;
+  transition: background-color 0.3s;
+  border-radius: 200px;
+}
+
+.btn.btn-primary:hover {
+  background-color: #002b57;
 }
 
 /* CSS untuk menu / navbar */
@@ -115,7 +121,7 @@ header {
 }
 
 .active {
-  background-color: #F2C808;
+  /* background-color: #F2C808; */
   color: #15477A;
 }
 li.nav-item.active {
@@ -171,13 +177,231 @@ li.nav-item.active {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   text-align: center;
+  font-family: Raleway, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 50%;
 }
 
 #hero-area .slider-item-content h2 {
   font-size: 35px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 #hero-area .slider-item-content p {
+  font-size: 16px;
+}
+
+/* css untuk section sambutan */
+
+#sambutan  {
+  margin: 30px 0;
+}
+
+#sambutan h2 {
+  text-align: center;
+  color: #15477A;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#sambutan h3 {
+  color: #15477A;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+#sambutan h6 {
+  color: #15477A;
+  margin-left: 20px;
+  font-style: oblique;
+}
+
+#sambutan a {
+  margin-left: 20px;
+}
+
+#sambutan p {
+  font-size: 15px;
+  font-family: Raleway, sans-serif;
+  font-size: 500;
+  line-height: 28px;
+  margin-left: 20px;
+}
+
+/* css untuk section Prestasi */
+
+#prestasi {
+  min-height: 250px;
+}
+
+#prestasi .col-item-kanan {
+  padding: 20px 30px 20px 20px;
+}
+
+.section-item {
+  margin: 70px 0;
+  box-shadow: 0 0 25px #ddd;
+  height: 300px;
+  overflow: hidden;
+}
+
+.section-item-tumbnail {
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.section-title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #15477A;
+  font-weight: 600;
+}
+
+.section-title h2:after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: #F2C808;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-item-title {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.section-item-title h3 {
+  font-size: 23px;
+  color: #15477A;
+  line-height: 25px;
+  font-weight: 600;
+  padding-right: 40px;
+}
+
+.section-item-title span {
+  font-size: 12px;
+  color: #666;
+  font-weight: 500;
+}
+
+.section-item-title span i {
+  margin-right: 5px;
+}
+.section-item-title span:first-of-type {
+  margin-right: 15px;
+}
+
+.section-item-body p {
+  font-size: 13px;
+  line-height: 25px;
+  color: #666;
+}
+
+/* css untuk tombol selengkapnya */
+
+.tombol-selengkapnya {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn.btn-more {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #15477A;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid #15477A;
+  border-radius: 0;
+  padding: 10px 80px;
+}
+
+/* Css untuk tenaga pendidik slider */
+#tenaga-pendidik .owl-item {
+  padding: 20px 10px;
+}
+
+.section-item-slider {
+  height: 360px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  position: relative;v
+}
+
+#tenaga-pendidik .foto-guru {
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-item-caption {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  color: #000;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  padding: 20px 10px 15px;
+}
+
+.section-item-caption h5 {
+  color: #15477A;
   font-size: 18px;
+  font-weight: 600;
+}
+
+.section-item-caption h6 {
+  font-size: 12px;
+  color: #F2C808;
+  text-transform: uppercase;
+}
+
+#tenaga-pendidik .section-body {
+  position: relative;
+}
+
+#slider-tools-1 .owl-next,
+#slider-tools-1 .owl-prev {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: -60px;
+  z-index: 20;
+  background-color: #15477A;
+  border: none;
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  border-radius: 50%;
+  outline: none;
+  box-shadow: 0 0 20px #ddd;
+  transition: background-color 0.3s;
+}
+
+#slider-tools-1 .owl-prev {
+  left: -60px;
+}
+
+#slider-tools-1 .owl-next:hover,
+#slider-tools-1 .owl-prev:hover {
+  cursor: pointer;
+  background-color: #F2C808;
+  color: #000;
 }
