@@ -246,6 +246,26 @@ li .nav-item.active {
   margin-left: 20px;
 }
 
+.youtube-video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.youtube-video-container::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.youtube-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* css untuk section Prestasi */
 
 #prestasi {
@@ -540,3 +560,31 @@ li .nav-item.active {
   width: 100%;
   object-fit: cover;
 } */
+
+/* css untuk section ekstrakulikulaer */
+
+#ekstrakulikuler {
+  background-color: #ddd;
+  padding: 80px 0;
+}
+
+#ekstrakulikuler .section-body-item {
+  display: flex;
+  background-color: #15477A;
+  border-radius: 5px;
+  padding: 20px;
+  color: #f2C808;
+  height: 200px;
+  align-items: center;
+  /* box-sizing: border-box; */
+  text-align: center;
+  font-size: 23px;
+}
+
+#ekstrakulikuler .section-body-item h4 {
+  font-weight: 500;
+}
+
+#ekstrakulikuler .section-body .row:first-of-type {
+  margin-bottom: 30px;
+}
