@@ -76,21 +76,37 @@ header {
   align-items: center;
 }
 
+header form {
+  width: 100%;
+}
+
 .searchbox {
   width: 100%
 }
 
-.btn.btn-primary {
-  background-color: #15477A;
+.btn.btn-primary,
+a .btn.btn-primary {
+  /* background-color: #15477A;
   color: #F2C808;
   text-transform: uppercase;
   font-weight: 600;
   transition: background-color 0.3s;
-  border-radius: 200px;
+  border-radius: 200px; */
+
+  color: #f2C808;
+  background-color: #15477A;
 }
 
-.btn.btn-primary:hover {
-  background-color: #002b57;
+.btn.btn-primary:hover,
+a .btn.btn-primary:hover {
+  background-color: #012d5a;
+  color: #fff;
+}
+
+#tombol-cari {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /* CSS untuk menu / navbar */
@@ -120,11 +136,12 @@ header {
   color: #fff;
 }
 
-.active {
-  /* background-color: #F2C808; */
+#header .active {
+  background-color: #F2C808;
   color: #15477A;
 }
-li.nav-item.active {
+
+li .nav-item.active {
   color: #15477A;
 }
 
@@ -330,6 +347,12 @@ li.nav-item.active {
   border: 2px solid #15477A;
   border-radius: 0;
   padding: 10px 80px;
+  transition: background-color 0.3s;
+}
+
+.btn.btn-more:hover {
+  background-color: #15477A;
+  color: #fff;
 }
 
 /* Css untuk tenaga pendidik slider */
@@ -377,7 +400,9 @@ li.nav-item.active {
 }
 
 #slider-tools-1 .owl-next,
-#slider-tools-1 .owl-prev {
+#slider-tools-1 .owl-prev,
+#slider-tools-3 .owl-next,
+#slider-tools-3 .owl-prev {
   position: absolute;
   content: "";
   top: 50%;
@@ -395,13 +420,123 @@ li.nav-item.active {
   transition: background-color 0.3s;
 }
 
-#slider-tools-1 .owl-prev {
+#slider-tools-1 .owl-prev,
+#slider-tools-3 .owl-prev {
   left: -60px;
 }
 
 #slider-tools-1 .owl-next:hover,
-#slider-tools-1 .owl-prev:hover {
+#slider-tools-1 .owl-prev:hover,
+#slider-tools-3 .owl-next:hover,
+#slider-tools-3 .owl-prev:hover {
   cursor: pointer;
   background-color: #F2C808;
   color: #000;
 }
+
+/* css nutk profil alumni */
+#alumni {
+  background-color: #15477A;
+  padding: 80px 0;
+  margin-bottom: 20px;
+}
+
+#alumni .section-title h2 {
+  color: #fff;
+}
+
+#alumni .section-item-slider {
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+#alumni .section-item-slider {
+  height: 320px;
+  padding: 20px;
+}
+
+#alumni .section-item-content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #F2C808;
+}
+
+#alumni .section-item-content h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#alumni .section-item-content p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 26px;
+}
+
+#alumni .section-item-content .more {
+  color: #f2C808;
+}
+
+#alumni .section-item-content .more i {
+  margin-left: 10px;
+}
+
+.foto-alumni {
+  height: 100%;
+  object-fit: cover;
+}
+
+.section-body {
+  position: relative;
+}
+
+#slider-tools-2 .owl-next,
+#slider-tools-2 .owl-prev {
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  right: -50px;
+  z-index: 20;
+  border: none;
+  height: 35px;
+  width: 35px;
+  outline-color: none;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+#slider-tools-2 .owl-prev {
+  left: -60px;
+}
+
+#slider-tools-2 .owl-prev:hover,
+#slider-tools-2 .owl-next:hover {
+  cursor: pointer;
+  background-color: #F2C808;
+}
+
+#alumni .btn.btn-more {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  margin-top: 50px;
+  /* margin: 20 auto; */
+  border: 2px solid #fff;
+  border-radius: 0;
+  padding: 10px 80px;
+}
+
+/* css untuk section galeri */
+#tenaga-pendidik .section-body,
+#galeri .section-body {
+  margin-bottom: 50px;
+}
+/* .video-galeri {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
